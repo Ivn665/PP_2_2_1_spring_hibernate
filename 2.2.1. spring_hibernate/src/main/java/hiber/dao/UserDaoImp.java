@@ -1,7 +1,6 @@
 package hiber.dao;
 
 import hiber.model.*;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -38,5 +37,4 @@ public class UserDaoImp implements UserDao {
         query.setParameter("series", series);
         return query.uniqueResult();
     }
-
 }
